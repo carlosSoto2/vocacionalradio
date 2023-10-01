@@ -1,0 +1,18 @@
+<div class="section-full bg-white ">
+    <div class="container">
+         <div class="section-content p-tb10 owl-btn-vertical-center">
+            <div class="owl-carousel home-client-carousel-2">
+            
+                <div class="item" *ngFor="let object of data">
+                    <a routerLink="/about/about1" class="client-logo-pic">
+                    <img src="{{object}}" alt="">
+                      <div>
+                        <span>View More</span>
+                      </div>                                      
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

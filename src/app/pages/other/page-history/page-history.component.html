@@ -1,0 +1,50 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- ABOUT COMPANY SECTION START -->
+        <div class="section-full p-t80 p-b50	 bg-white inner-page-padding">
+            <div class="container">
+                <div class="section-content ">
+                     <div class="our-history text-black">
+
+                             <div class="row" *ngFor="let object of history">
+                                <div class="col-12 pic-bg-border">
+                                    <div class="our-history-pic bg-no-repeat bg-center bg-cover" data-stellar-background-ratio="0.5" style="background-image:url({{object.image}});">
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="our-history-content m-b30">
+                                        <div class="large-title">
+                                          <h2 class="m-t0">{{object.title}}</h2>
+                                        </div>
+                                        <p>{{object.description}}</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT COMPANY SECTION END -->
+
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>
+</div>

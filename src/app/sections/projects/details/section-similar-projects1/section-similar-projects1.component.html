@@ -1,0 +1,37 @@
+<div class="section-full p-tb80 bg-gray inner-page-padding">
+    <div class="container">
+        <div class="section-content">
+            <!-- TITLE START -->
+            <div class="section-head">
+                <div class="sx-separator-outer separator-left">
+                    <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                        <h3 class="sep-line-one">Similar Projects</h3>
+                    </div>
+                </div>
+            </div>                   
+            <!-- TITLE END -->                                 
+            <div class="work-carousel-outer">
+                <div class="owl-carousel mfp-gallery project-carousel project-carousel3 owl-btn-vertical-center p-lr80">
+                    <!-- COLUMNS 1 -->
+                    <div class="item" *ngFor="let object of data">
+                        <div class="project-mas m-a30">
+                            <div class="image-effect-one">
+                              <img src="{{object.image}}" alt="" />
+                                <div class="figcaption">
+                                    <a class="mfp-link" href="{{object.image2}}">
+                                        <i class="fa fa-arrows-alt"></i>
+                                    </a>  
+                                </div>
+                            </div> 
+                            <div class="project-info p-t20">
+                                <h4 class="sx-tilte  m-t0"><a routerLink="/projects/project-detail2">{{object.title}}</a></h4>
+                                <p>{{object.description}}</p>
+                                <a href="javascript:void(0);"><i class="link-plus bg-primary"></i></a>
+                            </div>
+                        </div>                                                       
+                    </div>                                                                                                                           
+                 </div>
+            </div> 
+         </div>
+     </div>
+ </div>

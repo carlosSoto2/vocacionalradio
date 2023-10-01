@@ -1,0 +1,48 @@
+<div class="section-full  mobile-page-padding bg-white  p-t80 p-b50 bg-repeat overflow-hide" style="background-image:url(assets/images/background/bg-5.png);">
+
+    <div class="container">
+            <div class="large-title-block text-center">
+
+            <!-- TITLE START -->
+            <div class="section-head">
+                <div class="sx-separator-outer separator-center">
+                    <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                        <!-- <h3 class="sep-line-one">{{data.title}}</h3> -->
+                    </div>
+                </div>
+            </div>
+            <!-- TITLE END -->
+
+            </div>
+        <div class="section-content">
+            <div class="row number-block-two-outer">
+                <div class="col-lg-4 col-md-6 col-sm-12 m-b30" *ngFor="let object of data.work">
+
+                    <div class="number-block-two animate-in-to-top bdr-gray-light bdr-solid bdr-1">
+                        <div class="figcaption bg-white  p-a30">
+                            <h4 class="m-t0 sx-text-primary">{{object.title}}</h4>
+                            <p ngif="description">{{object.description}}</p>
+                            <p ngif="description1">{{object.description1}}</p>
+                            <p ngif="description2">{{object.description2}}</p>
+                            <p ngif="description3">{{object.description3}}</p>
+                            <p ngif="description4">{{object.description4}}</p>
+                            <p ngif="description5">{{object.description5}}</p>
+                            <p ngif="description6">{{object.description6}}</p>
+                            <p ngif="description7">{{object.description7}}</p>
+                            <!-- <p ngif="description">{{object.description}}</p> -->
+                            <!-- <a routerLink="/services/services-detail" class="site-button-link">Read More</a> -->
+                            <div class="figcaption-number animate-in-to-top-content">
+                                <span>{{object.serial}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+ </div>

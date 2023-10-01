@@ -1,0 +1,158 @@
+<div class="blog-single-space max-w900 ml-auto mr-auto">
+    <!-- BLOG START --> 
+    <div class="blog-post blog-detail text-black">
+        <div class="sx-post-media">
+             <div class="portfolio-item">
+                <img class="img-responsive" src="{{data.thumb}}" alt="">
+            </div>
+        </div>
+        
+        <div class="sx-post-meta  m-t20">
+            <ul>
+                <li class="post-date"><strong>{{data.day}} </strong> <span>{{data.date}}</span> </li>
+                <li class="post-author"><a routerLink="/blog/blog-grid">By <span>{{data.author}}</span></a> </li>
+                <li class="post-category"><a routerLink="/blog/blog-grid"><span>{{data.area}}</span></a> </li>
+            </ul>
+        </div>  
+                                      
+        <div class="sx-post-title ">
+            <h3 class="post-title">{{data.title}}</h3>
+        </div>
+        
+        <div class="sx-post-text" [innerHTML]='data.description'></div>
+        
+        <div class="autor-post-tag-share p-a30 bg-gray">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget_tag_cloud m-b15">
+                        <h5 class="tagcloud">Tags</h5>
+                        <div class="tagcloud">
+                            <a routerLink="/blog/blog-grid" *ngFor="let object of data.tags">{{object}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="clearfix single-post-share">
+                        <h5>Share this Post:</h5>
+                        <div class="widget_social_inks">
+                            <ul class="social-icons social-md social-square social-dark m-b0">
+                                <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+                                <li><a href="https://twitter.com" class="fa fa-twitter"></a></li>
+                                <li><a href="https://rss.com" class="fa fa-rss"></a></li>
+                                <li><a href="https://www.youtube.com" class="fa fa-youtube"></a></li>
+                                <li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
+                            </ul>
+                       </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        
+        <div class="post-controls p-t30">
+            <div class="d-flex justify-content-between">
+                <div class="prev-post"><a routerLink="/blog/blog-grid">Prev Article</a></div>
+                <div class="next-post"><a routerLink="/blog/blog-grid">Next Article</a></div>
+            </div>
+        </div>                                 
+                                                         
+    </div>
+    
+    <!-- OUR BLOG START -->
+    
+    <!-- TITLE START -->
+    <div class="section-head">
+        <div class="sx-separator-outer separator-left">
+            <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                <h3 class="sep-line-one">Blog</h3>
+            </div>
+        </div>
+    </div>                   
+    <!-- TITLE END --> 
+
+    <!-- IMAGE CAROUSEL START -->
+    <div class="section-content">
+        <div class="row">
+        
+            <div class="{{withSidebar == '1' ? 'col-md-6 col-sm-6' : 'col-md-4 col-sm-12'}}" *ngFor="let object of data.similarBlogs">
+                <app-elements-box8 [data]='object' detail='1'></app-elements-box8>
+            </div>
+                                                                                                                                                                                                    
+        </div>
+    </div>
+     
+    <!-- OUR BLOG END -->
+                       
+    <div class="clear" id="comment-list">
+        <div class="comments-area" id="comments">
+            <h2 class="comments-title">3 Comments</h2>
+            <div class="comments-outer p-tb30">
+                <!-- COMMENT LIST START -->
+                <ol class="comment-list">
+                    <li class="comment" *ngFor="let object of data.comments">
+                        <!-- COMMENT BLOCK -->
+
+                        <app-elements-box11 [data]='object'></app-elements-box11>
+
+                        <!-- SUB COMMENT BLOCK -->
+                        <ol class="children">
+                            <li class="comment odd parent" *ngFor="let obj1 of object.reply">
+                            
+                                <app-elements-box11 [data]='obj1'></app-elements-box11>
+                                
+                                <ol class="children">
+                                    <li class="comment odd parent" *ngFor="let obj2 of obj1.reply">
+
+                                        <app-elements-box11 [data]='obj2'></app-elements-box11>
+                                        
+                                    </li>
+                                </ol>
+                                
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <!-- COMMENT LIST END -->
+                
+                <!-- LEAVE A REPLY START -->
+                <div class="comment-respond m-t30" id="respond">
+
+                    <h2 class="comment-reply-title" id="reply-title">Leave a Comments
+                        <small>
+                            <a style="display:none;" href="javascript:void(0);" id="cancel-comment-reply-link" rel="nofollow">Cancel reply</a>
+                        </small>
+                    </h2>
+
+                    <form class="comment-form bdr-1 bdr-solid bdr-gray p-tb15" id="commentform" method="post" >
+                
+                        <p class="comment-form-author">
+                            <label for="author">Name <span class="required">*</span></label>
+                            <input class="form-control" type="text" value="" name="user-comment"  placeholder="Author" id="author">
+                        </p>
+                        
+                        <p class="comment-form-email">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input class="form-control" type="text" value="" name="email" placeholder="Email"  id="email">
+                        </p>
+                        
+                        <p class="comment-form-url">
+                            <label for="url">Website</label>
+                            <input class="form-control" type="text"  value=""  name="url"   placeholder="Website" id="url">
+                        </p>
+                        
+                        <p class="comment-form-comment">
+                            <label for="comment">Comment</label>
+                            <textarea class="form-control" rows="8" name="comment" placeholder="Comment" id="comment"></textarea>
+                        </p>
+                        
+                        <p class="form-submit">
+                            <button class="site-button btn-half" type="button"><span> Submit</span></button>
+                        </p>
+                        
+                    </form>
+
+                </div>
+                <!-- LEAVE A REPLY END -->
+           </div>
+        </div>
+    </div>
+</div>

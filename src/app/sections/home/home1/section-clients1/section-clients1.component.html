@@ -1,0 +1,34 @@
+<div class="section-full  mobile-page-padding bg-gray  p-t80 p-b10 bg-repeat" style="background-image:url(assets/images/background/bg-12.jpg);">
+
+    <div class="container">
+
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="sx-separator-outer separator-left">
+                <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <h3 class="sep-line-one">{{data.title}}</h3>
+                </div>
+            </div>
+        </div>
+        <!-- TITLE END -->
+        <div class="section-content">
+            <div class="client-grid m-b40">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 m-b30" *ngFor="let object of data.clients">
+                        <a target="_blank" href="{{object.url}}" class="client-logo-pic">
+                        <img src="{{object.image}}" alt="">
+                          <div>
+                            <span>M&aacute;s Inf</span>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hilite-title text-left p-l50 text-uppercase">
+        <strong>{{data.title2}}</strong>
+    </div>
+ </div>

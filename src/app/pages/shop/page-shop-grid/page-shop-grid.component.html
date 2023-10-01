@@ -1,0 +1,81 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SHOP SECTION START -->
+        <div class="section-full p-t120 p-b90 bg-white mobile-page-padding">
+            <div class="container">
+
+                <div class="product-filter-wrap d-flex justify-content-between align-items-center m-b30">
+                    <div class="list-grid-control">
+                        <a routerLink="/shop/shop" class="active"><i class="fa fa-th"></i></a>
+                        <a routerLink="/shop/shop-list"><i class="fa fa-th-list"></i></a>
+                    </div>
+                    <span class="woocommerce-result-count">Showing 1&ndash;10 of 13 results</span>
+                    <form class="woocommerce-ordering select-box-border-style1-wrapper" method="get">
+                        <select name="orderby" class="orderby select-box-border-style1" aria-label="Shop order">
+                            <option value="menu_order"  selected='selected'>Default sorting</option>
+                            <option value="popularity" >Sort by popularity</option>
+                            <option value="rating" >Sort by average rating</option>
+                            <option value="date" >Sort by latest</option>
+                            <option value="price" >Sort by price: low to high</option>
+                            <option value="price-desc" >Sort by price: high to low</option>
+                        </select>
+                        <input type="hidden" name="paged" value="1" />
+                    </form>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 m-b30">
+
+                        <div class="row">
+
+                            <!-- COLUMNS 2 -->
+                            <div class="col-lg-6 col-md-6 m-b30" *ngFor="let object of shopItems">
+                                <app-elements-box9 [data]='object'></app-elements-box9>
+                            </div>
+
+                        </div>
+                        <div class="text-center">
+                            <ul class="pagination-st-1 m-t30 m-b0">
+                                <li><a href="javascript:void(0);"><span class="fa fa-chevron-left"></span></a></li>
+                                <li><a href="javascript:void(0);">1</a></li>
+                                <li class="active"><a href="javascript:void(0);">2</a></li>
+                                <li><a href="javascript:void(0);">3</a></li>
+                                <li><a href="javascript:void(0);"><span class="fa fa-chevron-right"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- SIDE BAR START -->
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 sticky_column  m-b30">
+
+                        <app-section-blog-sidebar [data]='sidebar' withShop='1'></app-section-blog-sidebar>
+
+                    </div>
+                    <!-- SIDE BAR END -->
+
+
+                </div>
+            </div>
+        </div>
+        <!-- SHOP SECTION END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

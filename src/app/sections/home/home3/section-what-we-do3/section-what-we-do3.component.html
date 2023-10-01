@@ -1,0 +1,38 @@
+<div class="section-full  mobile-page-padding bg-white  p-t80 p-b50 bg-repeat overflow-hide" style="background-image:url(assets/images/background/cross-line2.png)">
+            
+    <div class="container">
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="sx-separator-outer separator-center">
+                <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <h3 class="sep-line-one">{{data.title}}</h3>
+                </div>
+            </div>
+        </div>                   
+        <!-- TITLE END -->                
+        <div class="section-content">
+            <div class="row number-block-three-outer justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 m-b30" *ngFor="let object of data.work">
+                
+                    <div class="number-block-three slide-ani-top">
+                        <div class="sx-media">
+                            <img src="{{object.image}}" alt="">
+                        </div>
+                        <div class="figcaption bg-gray  p-a30">
+                            <h4 class="m-tb0"><a routerLink="/services/services-detail">{{object.title}}</a></h4>
+                            
+                            <div class="figcaption-number animate-top-content">
+                                <span>{{object.serial}}</span>
+                            </div>                                                                                
+                        </div>
+                    </div>
+                                                    
+                </div>                                                          
+             
+            </div>
+            
+                                    
+
+        </div>
+    </div>
+ </div>

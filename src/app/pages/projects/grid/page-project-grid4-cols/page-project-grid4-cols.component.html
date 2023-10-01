@@ -1,0 +1,56 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SECTION CONTENT START -->
+        <div class="section-full p-tb80 column-grid-4 inner-page-padding">
+            <div class="container">
+                <!-- Filter Nav START -->
+              <div class="filter-wrap p-b30 text-center">
+                    <ul class="filter-navigation masonry-filter clearfix">
+                        <li class="active"><a class="btn from-top" data-filter="*" href="javascript:void(0);" data-hover="All">All</a></li>
+                        <li><a class=" btn from-top" data-filter=".cat-1" href="javascript:void(0);">Architecture</a></li>
+                        <li><a class=" btn from-top" data-filter=".cat-2" href="javascript:void(0);">Decore</a></li>
+                        <li><a class=" btn from-top" data-filter=".cat-3" href="javascript:void(0);">Outdoor</a></li>
+                        <li><a class=" btn from-top" data-filter=".cat-4" href="javascript:void(0);">Interiors </a></li>
+                        <li><a class=" btn from-top" data-filter=".cat-5" href="javascript:void(0);">Residential</a></li>
+                    </ul>
+                </div>
+                <!-- Filter Nav END -->
+
+                <!-- GALLERY CONTENT START -->
+                 <ul  class="masonry-outer mfp-gallery row work-grid clearfix list-unstyled">
+
+                    <!-- COLUMNS 1 -->
+                    <li *ngFor="let object of projects" class="masonry-item {{object.category}} col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                        <app-elements-box5 [data]='object'></app-elements-box5>
+                    </li>
+
+                 </ul>
+                <!-- GALLERY CONTENT END -->
+
+                <div class="text-center load-more-btn-outer" style="background-image:url(assets/images/background/cross-line.png)">
+                    <button class="site-button-secondry btn-half"><span>Load More</span></button>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- SECTION CONTENT END  -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

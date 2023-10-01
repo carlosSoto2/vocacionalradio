@@ -1,0 +1,49 @@
+<div class="section-full text-center bg-gray bg-no-repeat p-t80 p-b80 bg-top-right mobile-page-padding"  style="background-image:url(assets/images/background/bg-4.png)">
+    <div class="container">
+    
+    <!-- TITLE START -->
+    <div class="section-head">
+        <div class="sx-separator-outer separator-center">
+            <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                <h3 class="sep-line-one">{{data.title}}</h3>
+            </div>
+        </div>
+    </div>                   
+    <!-- TITLE END --> 
+        
+        <div class="section-content">
+            <div class="pricingtable-row p-t20">
+                <div class="row no-gutters justify-content-center">
+                
+                    <div class="col-lg-4  col-md-4 col-sm-6  m-b30" *ngFor="let object of data.plans; let i = index;">
+                        <div class="pricingtable-wrapper pricing-table-style-5 bg-white">
+                            <div class="pricingtable-inner {{ i == 1 ? 'pricingtable-highlight shadow-lg' : ''}}">
+                                <div class="pricingtable-title">
+                                    <h4>{{object.plan}} Plan</h4>
+                                </div>
+                                
+                                <div class="pricingtable-price">
+                                    <span class="pricingtable-bx">{{object.price}}</span>
+                                    <span class="pricingtable-type">{{object.term}}</span>
+                                </div>
+                                
+                                <ul class="pricingtable-features text-black">
+                                    <li *ngFor="let feat of object.features">{{feat}}</li>
+                                </ul>
+                                
+                                <div class="pricingtable-footer">
+                                    <a routerLink="/about/about1" class="site-button-link white">Purchase</a>
+                                </div>
+                                
+                                <div class="overlay-main bg-white opacity-07"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>

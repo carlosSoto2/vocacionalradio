@@ -1,0 +1,36 @@
+<div class="section-full p-t80 p-b50 sx-bg-secondry bg-no-repeat bg-bottom-center mobile-page-padding" style="background-image:url(assets/images/background/bg-map.png)">
+    <div class="container">
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="sx-separator-outer separator-center">
+                <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <h3 class="sep-line-one sx-text-primary">{{data.title}}</h3>
+                </div>
+            </div>
+        </div>
+        <!-- TITLE END -->
+
+        <div class="section-content ">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 m-b30" *ngFor="let object of data.achievements">
+                    <div class="sx-box our-story ">
+                        <div class="mt-media our-story-info d-flex justify-content-start">
+                            <!-- <div class="our-story-time"><span class="date">{{object.day}}</span><span class="month">{{object.month}}</span></div> -->
+                            <h4 class="text-uppercase our-story-year ">{{object.years}}</h4>
+                        </div>
+                        <div class="our-story-detail">
+                            <h4 class="text-white" >{{object.title}}</h4>
+                            <!-- <p>{{object.description}}</p> -->
+                        </div>
+                    </div>
+                 </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                 </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

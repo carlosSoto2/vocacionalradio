@@ -1,0 +1,42 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- OUR EXPERTS SECTION START -->
+
+         <div class="section-full p-t80 p-b50 mobile-page-padding">
+                    <div class="container">
+
+                        <!-- IMAGE CAROUSEL START -->
+                        <div class="section-content">
+                            <div class="row">
+
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 m-b30" *ngFor="let object of team">
+                                    <app-elements-box4 [data]='object'></app-elements-box4>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                 </div>
+
+        <!-- OUR EXPERTS SECTION END -->
+
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>
+</div>

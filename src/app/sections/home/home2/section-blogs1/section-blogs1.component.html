@@ -1,0 +1,28 @@
+<div class="section-full mobile-page-padding bg-white p-t80 p-b50 mobile-page-padding">
+    <div class="container">
+
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="sx-separator-outer separator-center">
+                <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <h3 class="sep-line-one">{{data.title}}</h3>
+                </div>
+            </div>
+        </div>                   
+        <!-- TITLE END --> 
+
+        <!-- IMAGE CAROUSEL START -->
+        <div class="section-content">
+            <div class="row justify-content-center">
+            
+                <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let object of data.blogs">
+                    <app-elements-box8 [data]='object'></app-elements-box8>
+                </div>
+                                                                                                                                                                                                        
+            </div>
+        </div>
+    </div>
+    <div class="hilite-title text-left p-l50 text-uppercase">
+        <strong>Blog</strong>
+    </div>                
+ </div>  

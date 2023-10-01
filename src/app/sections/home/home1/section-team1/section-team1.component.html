@@ -1,0 +1,25 @@
+<div class="section-full p-t80 p-b50 mobile-page-padding">
+    <div class="container">
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="sx-separator-outer separator-left">
+                <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <h3 class="sep-line-one">Super Team</h3>
+                </div>
+            </div>
+        </div>                   
+        <!-- TITLE END -->
+                                                  
+        <!-- IMAGE CAROUSEL START -->
+        <div class="section-content">
+            <div class="row team-item-four">
+            
+                <div class="col-lg-3 col-md-6 col-sm-6 m-b30" *ngFor="let object of data.team">
+                    <app-elements-box3 [data]='object'></app-elements-box3>
+                </div>                                                                
+ 
+            </div>
+        </div>
+        
+    </div>
+ </div> 

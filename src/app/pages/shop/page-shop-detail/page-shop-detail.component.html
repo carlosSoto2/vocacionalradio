@@ -1,0 +1,37 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SHOP DETAIL SECTION START -->
+        <div class="section-full p-t80 p-b50 mobile-page-padding">
+            <div class="container woo-entry">
+
+                <app-section-shop-description [data]='itemDetail'></app-section-shop-description>
+
+                <!-- TABS CONTENT START -->
+                <app-section-shop-tabs [data]='tabData'></app-section-shop-tabs>
+                <!-- TABS CONTENT START -->
+
+                <app-section-shop-related-products [data]='relatedProducts'></app-section-shop-related-products>
+
+            </div>
+        </div>
+        <!-- SHOP DETAIL SECTION END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

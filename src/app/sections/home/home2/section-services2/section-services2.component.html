@@ -1,0 +1,21 @@
+<div class="section-full mobile-page-padding p-t80 bg-white bg-change-section">
+    <div class="container">
+    <!-- TITLE START -->
+    <div class="section-head">
+        <div class="sx-separator-outer separator-center">
+            <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                <h3 class="sep-line-one">{{data.title}}</h3>
+            </div>
+        </div>
+    </div>                   
+    <!-- TITLE END --> 
+    </div>             
+     <div class="owl-carousel service-slider owl-btn-vertical-center"> 
+      
+        <div class="item" *ngFor="let object of data.services">              
+            <app-elements-box2 [data]='object'></app-elements-box2>
+        </div>
+        
+    </div>	
+
+</div>

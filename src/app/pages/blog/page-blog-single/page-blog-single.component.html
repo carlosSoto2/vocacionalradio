@@ -1,0 +1,28 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content ">
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SECTION CONTENT START -->
+        <div class="section-full p-t80 p-b50 inner-page-padding">
+            <div class="container">
+                <app-section-blog-single [data]='blog'></app-section-blog-single>
+            </div>
+        </div>
+        <!-- SECTION CONTENT END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

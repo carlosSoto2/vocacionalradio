@@ -1,0 +1,15 @@
+<div class="comment-body">
+    <div class="comment-meta">
+        <a routerLink="/about/about1">{{data.date}}</a>
+    </div>                                        
+    <div class="comment-author vcard">
+        <img  class="avatar photo" src="{{data.profileImage}}" alt="">
+        <cite class="fn"> {{data.username}} </cite>
+        <span class="says">says:</span>
+    </div>
+
+    <p>{{data.comment}} </p>
+    <div class="reply">
+        <a routerLink="/about/about1" class="comment-reply-link letter-spacing-2 text-uppercase">Reply</a>
+    </div>
+</div>

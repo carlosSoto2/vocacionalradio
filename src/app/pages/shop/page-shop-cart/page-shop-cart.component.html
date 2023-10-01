@@ -1,0 +1,91 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- OUR BEST SERVICES SECTION  START-->
+        <div class="section-full  p-t80 p-b50 mobile-page-padding">
+
+            <div class="container">
+
+                <div class="section-content">
+
+                    <div id="no-more-tables">
+                        <table class="table-bordered  table-condensed cf wt-responsive-table shopping-table">
+                            <thead class="cf">
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Product Name</th>
+                                    <th class="numeric">Unit Price</th>
+                                    <th class="numeric">Stock Status</th>
+                                    <th class="numeric">Total</th>
+                                    <th class="numeric">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let object of cart.items">
+                                    <td data-title="Code"><img src="{{object.image}}" alt=""></td>
+                                    <td data-title="Company">{{object.product}}</td>
+                                    <td data-title="Price" class="numeric">${{object.price}}</td>
+                                    <td data-title="Change" class="numeric">{{object.stock}}</td>
+                                    <td data-title="Change %" class="numeric"><a routerLink="/shop/shop" class="text-black">{{object.total}}</a></td>
+                                    <td data-title="Open" class="numeric"><a routerLink="/shop/shop"><i class="fa fa-times"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="cart-buttons text-right">
+                            <a routerLink="/shop/shop" class="site-cart-btn m-b15 site-button-secondry m-r15">Update Cart</a>
+                            <a routerLink="/shop/shop" class="site-cart-btn m-b15 site-button">Continue Shopping</a>
+                        </div>
+
+                        <div class="cart-total-table shopping-cart-total">
+                            <div class="sub_total">
+                                    <ul class="top">
+                                        <li>Subtotal</li>
+                                        <li><span>${{cart.subtotal}}</span></li>
+                                    </ul>
+                                    <div class="shipping">
+                                        <ul>
+                                            <li> Free Shiping <span>+ ${{cart.shipping}}</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="total">
+                                        <ul>
+                                            <li>Total</li>
+                                            <li><span>${{cart.total}}</span></li>
+                                        </ul>
+                                    </div>
+
+                            </div>
+
+                            <div class="proceed-to-checkout text-right">
+                                <a routerLink="/shop/shop-checkout" class="m-t15 site-cart-btn site-button">Proceed to checkout</a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- OUR BEST SERVICES SECTION END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

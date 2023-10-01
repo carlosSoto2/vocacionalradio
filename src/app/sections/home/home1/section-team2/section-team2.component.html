@@ -1,0 +1,29 @@
+<div class="section-full p-t80 p-b50 bg-gray mobile-page-padding">
+    <div class="container">
+       
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="sx-separator-outer separator-center">
+                <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <h3 class="sep-line-one">{{data.title}}</h3>
+                </div>
+            </div>
+        </div>                   
+        <!-- TITLE END -->                        
+                    
+        <!-- IMAGE CAROUSEL START -->
+        <div class="section-content">
+            <div class="row justify-content-center">
+            
+                <div class="col-lg-4 col-md-6 col-sm-12 m-b30" *ngFor="let object of data.team">
+                    <app-elements-box4 [data]='object'></app-elements-box4>
+                </div> 
+                                                                                
+            </div>
+        </div>
+        
+    </div>
+<div class="hilite-title text-left p-l50 text-uppercase">
+    <strong>Experts</strong>
+</div>                    
+</div>

@@ -1,0 +1,40 @@
+<div class="section-full mobile-page-padding p-t80 p-b50 {{colorInvert == 1 ? 'bg-white' : 'bg-gray'}}">
+    <div class="container">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                    
+                        <div class="about-home-3 m-b30 {{colorInvert == 1 ? 'bg-gray' : 'bg-white'}}">
+                            <h3 class="m-t0 m-b20 sx-tilte">{{data.title}}</h3>
+                            <div [innerHTML]='data.description'></div>
+
+                            <div class="text-left">
+                                <a routerLink="/about/about1" class="site-button btn-half"><span>Read More</span></a>
+                            </div>                                                    
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                        <div class="video-section-full-v2">
+                            <div class="video-section-full bg-no-repeat bg-cover bg-center overlay-wraper m-b30" style="background-image:url(assets/images/video-bg.jpg)">
+                                <div class="overlay-main bg-black opacity-04"></div>
+                                <div class="video-section-inner">
+                                    <div class="video-section-content">
+                                         <a href="{{data.media}}" class="mfp-video play-now">
+                                            <i class="icon fa fa-play"></i>
+                                            <span class="ripple"></span>
+                                        </a> 
+                                        <div class="video-section-bottom">
+                                            <h3 class="sx-title text-white">{{data.experience}}<br>Experience</h3>
+                                        </div> 
+                                    </div> 
+                                </div>  
+                            </div>
+                        </div>
+                    </div>  
+                                                  
+                </div>
+           </div>
+     </div>
+   
+</div>

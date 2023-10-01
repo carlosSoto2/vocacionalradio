@@ -1,0 +1,113 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SHOP SECTION START -->
+        <div class="section-full p-t120 p-b90 bg-white mobile-page-padding">
+            <div class="container">
+
+                <div class="sign-in-dialog">
+
+                    <div class="sign-in-dialog-form">
+                        <form>
+                            <div class="wt-tabs tabs-default">
+                                <ul class="nav nav-tabs">
+                                    <li><a class="active"data-toggle="tab" href="#login-one">Login </a></li>
+                                    <li><a data-toggle="tab" href="#register-one">Register </a></li>
+                                </ul>
+                                <div class="tab-content">
+
+                                    <div id="login-one" class="tab-pane active">
+                                        <div class="form-group">
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="user_name" type="text" placeholder="Username">
+                                                <i class="fs-input-icon fa fa-user"></i>
+                                            </div>
+                                       </div>
+                                        <div class="form-group">
+                                            <div class="ls-inputicon-box">
+                                                <input class="form-control" name="password" type="Password" placeholder="Password">
+                                                <i class="fs-input-icon fa fa-lock"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="login-forgot-password">
+                                                <a routerLink="/about/about1" class="text-primary">Forgot Password</a>
+                                            </div>
+                                        </div>
+                                        <div class="login-btn-bx text-right">
+                                            <button type="submit" class="site-button-secondry site-btn-effect">Login</button>
+                                        </div>
+                                    </div>
+
+                                    <div id="register-one" class="tab-pane">
+                                        <div class="guest_form">
+                                            <div class="form-group">
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="user_name" type="text" placeholder="Username">
+                                                    <i class="fs-input-icon fa fa-user"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="password" type="Password" placeholder="Password">
+                                                    <i class="fs-input-icon fa fa-lock"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="First_name" type="text" placeholder="First Name">
+                                                    <i class="fs-input-icon fa fa-pencil"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="Last_name" type="text" placeholder="Last Name">
+                                                    <i class="fs-input-icon fa fa-pencil"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="ls-inputicon-box">
+                                                    <input class="form-control" name="Email_address" type="email" placeholder="Email Address">
+                                                    <i class="fs-input-icon fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="login-btn-bx text-right">
+                                                <button type="submit" class="site-button-secondry site-btn-effect">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- SHOP SECTION END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

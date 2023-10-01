@@ -1,0 +1,43 @@
+<div class="section-full mobile-page-padding p-t80  p-b50 bg-gray">
+    <div class="section-content">
+        <div class="container">
+            <!-- TITLE START -->
+            <div class="section-head">
+                <div class="sx-separator-outer separator-left">
+                    <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                        <h3 class="sep-line-one ">{{data.title}}</h3>
+                    </div>
+                </div>
+            </div>                   
+            <!-- TITLE END -->
+              <div class="row">
+                  
+                <!-- Block one -->
+                <div class="col-lg-4 col-md-6 col-sm-12 m-b30" *ngFor="let object of data.services">
+                    
+                    <div class="sx-icon-box-wraper  icon-count-2-outer">
+                        <div class="icon-count-2 bg-white">
+                            <span class="icon-count-number">{{object.serial}}</span>
+                            <div class="icon-xl inline-icon m-b5 scale-in-center">
+                                <span class="icon-cell"><i class="{{object.icon}}"></i></span>
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="sx-tilte">{{object.title}}</h4>
+                                <p>{{object.description}}</p>
+                                <div class="text-left">
+                                    <a routerLink="/services/services-detail" class="site-button-link">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                            	
+                    
+                </div>
+                                                                                                                                                           
+            </div>
+        </div>
+    </div>
+    
+    <div class="hilite-title text-left p-l50 text-uppercase">
+        <strong>{{data.title2}}</strong>
+    </div>                
+</div> 

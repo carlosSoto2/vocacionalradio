@@ -1,0 +1,47 @@
+<div class="section-full mobile-page-padding p-t80 p-b80 bg-white bg-no-repeat bg-bottom-left" style="background-image:url(assets/images/background/bg-4.png)">
+    <div class="container">
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="sx-separator-outer separator-left">
+                <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <h3 class="sep-line-one">{{data.title}}</h3>
+                </div>
+            </div>
+        </div>
+        <!-- TITLE END -->
+
+            <div class="section-content">
+                <div class="row">
+
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="about-home-left">
+                            <h3 class="m-t0 sx-tilte">{{data.subtitle}}</h3>
+                            <p>{{data.description}}</p>
+                            <div class="text-left">
+                                <a routerLink="/about/about1" class="site-button-secondry btn-half"><span>M&aacute;s info</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="about-home-right">
+                            <div class="owl-carousel about-home number-slider owl-btn-vertical-center">
+                                <!-- COLUMNS 1 -->
+                                <div class="item " *ngFor="let object of data.images">
+                                    <div class="sx-img-effect zoom-slow">
+                                        <a routerLink="/about/about1"><img src="{{object.image}}" alt=""></a>
+                                   </div>
+                                </div>
+                           </div>
+                            <div class="about-home-before">
+                                 <img src="assets/images/about-slider/1-ab.png" alt="">
+                           </div>
+                       </div>
+                       </div>
+
+
+                </div>
+           </div>
+     </div>
+
+</div>

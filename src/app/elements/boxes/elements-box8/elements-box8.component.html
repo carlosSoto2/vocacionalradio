@@ -1,0 +1,26 @@
+<div class="blog-post blog-grid date-style-2">
+                            
+    <div class="sx-post-media sx-img-effect img-reflection">
+        <a routerLink="/blog/blog-single"><img src="{{data.image}}" alt=""></a>
+    </div>
+    
+    <div class="sx-post-info p-t30">
+        <div class="sx-post-meta ">
+            <ul>
+                <li class="post-date"><strong>{{data.day}}</strong> <span>{{data.month}}</span> </li>
+                <li class="post-author"><a routerLink="/team/team-single">By <span>{{data.author}}</span></a> </li>
+                <li class="post-comment"> <a routerLink="/about/about1">{{data.comments}} Comments</a> </li>
+            </ul>
+        </div>                                
+        <div class="sx-post-title ">
+            <h4 *ngIf="detail!='1'" class="post-title"><a routerLink="/blog/blog-single">{{data.title}}</a></h4>
+            <h4 *ngIf="detail=='1'" class="post-title"><a routerLink="/blog/blog-masonry">{{data.title}}</a></h4>
+        </div>
+
+        <div class="sx-post-readmore">
+             <a routerLink="/blog/blog-grid" title="READ MORE" rel="bookmark" class="site-button-link">View More</a>
+        </div>
+        
+    </div>
+    
+</div>

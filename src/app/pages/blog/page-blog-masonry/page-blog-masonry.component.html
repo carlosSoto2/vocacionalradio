@@ -1,0 +1,45 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SECTION CONTENT START -->
+        <div class="section-full p-tb80 inner-page-padding">
+            <!-- GALLERY CONTENT START -->
+
+            <div class="container clearfix">
+                <div class="masonry-outer mfp-gallery news-masonry  row">
+                    <!-- COLUMNS 1 -->
+                    <div class="masonry-item  col-lg-4 col-md-6 col-sm-12" *ngFor="let object of blogs">
+                        <app-elements-box8 [data]='object'></app-elements-box8>
+                    </div>
+
+                </div>
+                <ul class="pagination m-t30 m-b0">
+                   <li><a href="javascript:void(0);">«</a></li>
+                   <li class="active"><a href="javascript:void(0);">1</a></li>
+                   <li><a href="javascript:void(0);">2</a></li>
+                   <li><a href="javascript:void(0);">3</a></li>
+                   <li><a href="javascript:void(0);">»</a></li>
+                </ul>
+             </div>
+            <!-- GALLERY CONTENT END -->
+
+        </div>
+        <!-- SECTION CONTENT END  -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

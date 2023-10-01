@@ -1,0 +1,108 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SECTION CONTENT START -->
+        <div class="section-full p-tb80 inner-page-padding stick_in_parent">
+            <div class="container">
+                <div class="row">
+                    <div  class="col-lg-7 col-md-7  sticky_column">
+                        <div  class="project-detail-containt">
+                            <div class="bg-white text-black">
+                                <h3>{{project.title}} </h3>
+                                <p> {{project.description}}</p>
+                           <div class="product-block">
+                                <ul>
+                                  <li>
+                                    <h4 class="m-b10">Date</h4>
+                                    <p>{{project.date}}</p>
+                                  </li>
+                                  <li>
+                                    <h4 class="m-b10">Client</h4>
+                                    <p>{{project.client}}</p>
+                                   </li>
+                                  <li>
+                                    <h4 class="m-b10">Project type</h4>
+                                    <p>{{project.type}}</p>
+                                  </li>
+                                  <li>
+                                    <h4 class="m-b10">Location</h4>
+                                    <p>{{project.location}}</p>
+                                  </li>
+                                  <li>
+                                    <h4 class="m-b10">Year</h4>
+                                    <p>{{project.year}}</p>
+                                  </li>
+                              </ul>
+                            </div>
+
+
+                                <div class="m-b0">
+                                    <div class="sx-divider divider-1px  bg-black"><i class="icon-dot c-square"></i></div>
+                                </div>
+                                <ul class="social-icons social-square social-darkest m-b0">
+                                    <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+                                    <li><a href="https://twitter.com" class="fa fa-twitter"></a></li>
+                                    <li><a href="https://in.linkedin.com" class="fa fa-linkedin"></a></li>
+                                    <li><a href="https://rss.com" class="fa fa-rss"></a></li>
+                                    <li><a href="https://www.youtube.com" class="fa fa-youtube"></a></li>
+                                    <li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 ">
+
+                        <div class="project-detail-outer">
+
+                            <div class="project-detail-pic m-b30" *ngFor="let object of project.images">
+                                <div class="sx-media">
+                                    <img src="{{object}}" alt="">
+                                </div>
+                            </div>
+
+                            <div class="sx-box">
+                                <div class="sx-thum-bx sx-img-overlay1 sx-img-effect yt-thum-box">
+                                    <img src="{{project.media.thumb}}" alt="">
+                                    <a href="{{project.media.link | safe}}" class="mfp-video play-now">
+                                        <i class="icon fa fa-play"></i>
+                                        <span class="ripple"></span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div  class="project-detail-containt-2 m-t50">
+                    <h3>{{project.title2}}</h3>
+                    <p class="m-b0"> {{project.description2}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION CONTENT END  -->
+
+        <!-- Similar projects START -->
+
+        <app-section-similar-projects1 [data]='similarProjects'></app-section-similar-projects1>
+
+        <!-- Similar projects END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

@@ -1,0 +1,96 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- ABOUT TEAM MEMBER SECTION START -->
+        <div class="section-full p-tb80 bg-white mobile-page-padding">
+            <div class="container">
+                <div class="section-content ">
+                     <div class="about-team-member text-black">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-5 col-sm-12">
+                                <div class="about-single-team-info-left p-a30 sx-bg-secondry">
+                                      <div class="profile-image">
+                                          <img src="{{details.image}}" alt="" />
+                                      </div>
+                                      <div class="text-black bg-white p-a30">
+                                         <h4 class="m-t0">{{details.name}}</h4>
+                                         <h5 class="m-b0">{{details.role}}</h5>
+                                      </div>
+                                      <div class="team-single-social m-t30 text-white">
+                                            <ul class="m-b0 list-unstyled">
+                                                <li><span><i class="fa fa-envelope"></i></span><span>{{details.email}}</span></li>
+                                                <li><span><i class="fa fa-phone"></i></span><span>{{details.contact}}</span></li>
+                                                <li><span><i class="fa fa-map-marker"></i></span><span>{{details.address}}</span></li>
+                                                <li><span><i class="fa fa-globe"></i></span><span>{{details.website}}</span></li>
+                                            </ul>
+                                      </div>
+                                  </div>
+                            </div>
+
+                            <div class="col-lg-8 col-md-7 col-sm-12">
+                                <div class="about-single-team-info">
+                                    <div class="our-exp p-b30">
+                                        <div class="sx-box">
+                                            <h3 class="m-t0 m-b30">We Have<span class="sx-text-primary"> {{details.experience.time}}</span> Experience in Architecture & Interior Design.</h3>
+                                        </div>
+                                        <div *ngFor="let object of details.experience.fields">
+                                            <span class="progressText "><B>{{object.title}}</B></span>
+                                            <div class="progress m-b30 m-t10">
+                                            <div class="progress-bar sx-bg-primary progress-bar-striped progress-bar-animated text-black" role="progressbar" style="width: {{object.percentage}}%;" attr.aria-valuenow="{{object.percentage}}" aria-valuemin="0" aria-valuemax="100">{{object.percentage}}%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- TITLE START -->
+                                    <div class="section-head">
+                                        <div class="sx-separator-outer separator-left">
+                                            <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                                                <h3 class="sep-line-one">Our Experience</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TITLE END -->
+
+                                   <div class="experience">
+
+                                        <div class="sx-box our-story" *ngFor="let object of details.experience.summary">
+                                            <div class="mt-media our-story-info d-flex justify-content-start">
+                                                <div class="our-story-time"><span class="date">{{object.day}}</span><span class="month">{{object.month}}</span></div>
+                                                <h4 class="text-uppercase our-story-year">{{object.year}}</h4>
+                                            </div>
+                                            <div class="our-story-detail">
+                                                <h4 class="m-b20">{{object.title}}</h4>
+                                                <p>{{object.description}}</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT TEAM MEMBER SECTION END -->
+
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>
+</div>

@@ -1,0 +1,41 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SECTION CONTENTG START -->
+        <div class="section-full mobile-page-padding p-tb150 bg-bottom-left bg-no-repeat" style="background-image:url(assets/images/background/bg-4.png)">
+            <div class="container">
+                <div class="section-content">
+                    <div class="page-notfound row">
+                        <div class="col-md-7">
+                            <img src="assets/images/error-404.png" alt="">
+                        </div>
+                        <div class="col-md-5">
+                            <strong>Page Not Found</strong>
+                            <span class="title">Error 404</span>
+                            <p>The Page Requested Could not be foundwe're working on it</p>
+                            <a routerLink="/index" title="Back to home" class="site-button btn-half"><span> Back to home</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION CONTENT END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

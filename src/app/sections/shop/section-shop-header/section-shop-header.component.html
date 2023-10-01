@@ -1,0 +1,16 @@
+<div class="list-grid-control">
+    <a routerLink="/shop/shop" class="active"><i class="fa fa-th"></i></a>
+    <a routerLink="/shop/shop-list"><i class="fa fa-th-list"></i></a>
+</div>
+<span class="woocommerce-result-count">Showing 1&ndash;10 of 13 results</span>
+<form class="woocommerce-ordering select-box-border-style1-wrapper" method="get">
+    <select name="orderby" class="orderby select-box-border-style1" aria-label="Shop order">
+        <option value="menu_order"  selected='selected'>Default sorting</option>
+        <option value="popularity" >Sort by popularity</option>
+        <option value="rating" >Sort by average rating</option>
+        <option value="date" >Sort by latest</option>
+        <option value="price" >Sort by price: low to high</option>
+        <option value="price-desc" >Sort by price: high to low</option>
+    </select>
+    <input type="hidden" name="paged" value="1" />
+</form>

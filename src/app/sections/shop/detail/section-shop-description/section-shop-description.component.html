@@ -1,0 +1,78 @@
+<div class="row m-b30">
+    
+    <div class="col-md-4 col-sm-12  m-b30">
+        <div class="sx-box sx-product-gallery on-show-slider"> 
+        
+            <div id="sync1" class="owl-carousel owl-theme owl-btn-vertical-center m-b5">
+                <div class="item" *ngFor="let object of data.productImages">
+                    <div class="mfp-gallery">
+                        <div class="sx-box">
+                            <div class="sx-thum-bx sx-img-overlay1 ">
+                                <img src="{{object}}" alt="">
+                                <div class="overlay-bx">
+                                    <div class="overlay-icon-1">
+                                        <a class="mfp-link" href="{{object}}">
+                                            <i class="fa fa-search sx-icon-box-xs"></i>
+                                        </a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="sync2" class="owl-carousel owl-theme">
+                <div class="item" *ngFor="let object of data.productThumbs">
+                    <div class="sx-media">
+                        <img src="{{object}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-8 col-sm-12">
+        <div class="product-detail-info">
+            <div class="product-single-rating">
+                <span class="rating-bx site-text-primary">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span class="font-weight-600 text-black">({{data.reviewCount}} customer reviews)</span>
+            </div>
+            <div class="single-product-title ">
+                <h3 class="post-title">{{data.title}}</h3>
+            </div>
+            <div class="product-single-price">
+                <span class="p-single-old-price">${{data.oldPrice}}</span>
+                <span class="p-single-new-price">${{data.price}}</span>
+            </div>
+            
+
+            <div class="wt-product-text" [innerHTML]='data.description'>
+            
+            </div>
+            <form method="post" class="cart clearfix ">
+                <div class="quantity btn-quantity m-b20">
+                    <input id="demo_vertical2" type="text" value="1" name="demo_vertical2"/>
+                </div>
+                <button routerLink="/shop/shop-cart" class="site-cart-btn site-button"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+            </form>
+            <div class="product_meta"> 
+                <div class="sku_wrapper">SKU: 
+                    <span class="sku">{{data.sku}}</span>
+                </div> 
+                <div class="posted_in">Categories: 
+                    <a routerLink="/about/about1" rel="tag">{{data.categories}}</a>
+                </div>
+            </div>
+            <div class="product-single-availability">
+                Availability: <span>{{data.stock}} In Stock</span>
+            </div> 
+        </div>
+    </div>
+</div>

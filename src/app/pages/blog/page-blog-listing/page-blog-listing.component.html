@@ -1,0 +1,54 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <!--<app-header4></app-header4> -->
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SECTION CONTENT START -->
+        <div class="section-full p-tb80 inner-page-padding">
+
+            <!-- GALLERY CONTENT START -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 col-sm-12">
+
+                            <app-section-blog-listing [data]='blogs'></app-section-blog-listing>
+
+                            <ul class="pagination m-b30">
+                               <li><a href="javascript:void(0);">«</a></li>
+                               <li  class="active"><a href="javascript:void(0);">1</a></li>
+                               <li><a href="javascript:void(0);">2</a></li>
+                               <li><a href="javascript:void(0);">3</a></li>
+                               <li><a href="javascript:void(0);">4</a></li>
+                               <li><a href="javascript:void(0);">5</a></li>
+                               <li><a href="javascript:void(0);">»</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- SIDE BAR START -->
+                        <div class="col-lg-4 col-md-12 col-sm-12 sticky_column">
+                            <app-section-blog-sidebar [data]='sidebar'></app-section-blog-sidebar>
+                        </div>
+                        <!-- SIDE BAR END -->
+
+                    </div>
+                </div>
+            <!-- GALLERY CONTENT END -->
+
+        </div>
+        <!-- SECTION CONTENT END  -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1 [data]='footerData'></app-footer1>
+    <!-- FOOTER END -->
+
+</div>

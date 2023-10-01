@@ -1,0 +1,16 @@
+<!-- TITLE START -->
+<div class="section-head  text-center">
+    <h2 data-title="Product">Related products</h2>
+    <div class="sx-separator-outer  m-b30">
+        <div class="sx-separator bg-primary"></div>
+    </div>
+</div>
+<!-- TITLE END -->
+
+<div class="row">
+    <!-- Block 1 -->
+    <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc m-b30" *ngFor="let object of data">
+        <app-elements-box9 [data]='object'></app-elements-box9>
+    </div>
+   
+</div>

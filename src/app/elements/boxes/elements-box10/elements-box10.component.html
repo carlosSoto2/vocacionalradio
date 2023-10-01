@@ -1,0 +1,41 @@
+<div class="sx-box sx-product-box   overflow-hide">
+    <div *ngIf="data.sale == '1'" class="shop-pro-sale-bnr">Sale!</div>
+    <div class="sx-thum-bx sx-img-overlay1">
+        <img src="{{data.image}}" alt="">
+        <div class="item-cart-view">
+            <div class="item-cart-btn">
+                 <a routerLink="/shop/shop-cart">
+                     <i class="fa fa-cart-plus"></i>
+                 </a>
+             </div>
+             <div class="item-cart-btn">
+                <a routerLink="/shop/shop-cart">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+         </div>
+    </div>
+    <div class="sx-info">
+        <h5 class="sx-title">
+            <a routerLink="/shop/shop-detail">{{data.title}}</a>
+        </h5>
+            
+        <span class="price">
+            <del *ngIf="data.sale == '1'"><span><span class="Price-currencySymbol">$ </span>{{data.oldPrice}}</span></del>
+            <ins>
+                <span><span class="Price-currencySymbol">$ </span>{{data.price}}</span>
+            </ins>
+        </span>
+        <p>{{data.description}}</p>
+        <div class="shop-pro-size-list">
+            <span>Size:</span>
+            <ul>
+                <li><button type="button">S</button></li>
+                <li><button type="button">M</button></li>
+                <li><button type="button">L</button></li>
+                <li><button type="button">Xl</button></li>
+                <li><button type="button">XXl</button></li>
+            </ul>
+        </div>   
+    </div>
+</div>
