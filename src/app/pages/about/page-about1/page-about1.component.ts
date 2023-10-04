@@ -3,7 +3,7 @@ import { filter } from 'rxjs/operators';
 import { Router, NavigationEnd } from '@angular/router';
 
 
-declare function customInitFunctions():void;
+// declare function customInitFunctions():void;
 
 declare var jQuery: any;
 declare var initializeOnReady: any;
@@ -30,7 +30,7 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
       this.reinitializeThings();
     });
 
-    customInitFunctions()
+    // customInitFunctions()
   }
 
   reinitializeThings() {
@@ -45,7 +45,9 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
 
 
   ngOnInit(): void {
-    customInitFunctions();
+
+
+    // customInitFunctions();
   }
 
   banner = {
@@ -70,7 +72,7 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
   }
 
   whatwedo = {
-    title: "Lo Disfrutamos",
+    title: "Galeria de Fotos",
     work: [
       {
         image: "assets/images/what-we-do/whatwedo5.png",
@@ -128,33 +130,33 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
         title: "417"
       },
       {
-        years: "2018",
-        title: "1,910"
+        years: "2021",
+        title: "5,198"
 
       },
       {
 
+        years: "2018",
+        title: "1,910"
+      },
+      {
+
+        years: "2022",
+        title: "3,293"
+      },
+      {
         years: "2019",
         title: "8,191"
       },
       {
 
-        years: "2020",
-        title: "3,293"
-      },
-      {
-        years: "2021",
-        title: "5,198"
-      },
-      {
-
-        years: "2022",
-        title: "5,713"
-      },
-      {
-
         years: "2023",
         title: "3,320"
+      },
+      {
+
+        years: "2020",
+        title: "3,293"
       },
       {
 

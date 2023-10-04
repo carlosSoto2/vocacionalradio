@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 
-declare function customInitFunctions():void;
 
 @Component({
   selector: 'app-services1',
@@ -15,7 +14,6 @@ export class Services1Component implements OnInit {
   ngOnInit(): void {
 
 
-    customInitFunctions();
 
 
   }
@@ -58,6 +56,8 @@ export class Services1Component implements OnInit {
   services = {
     title: "Nuestra Programacion",
     services: [
+
+      
       {
         title: "Martes, Miercoles, Jueves  ",
         hour:"(9:00am a 2:00pm)",

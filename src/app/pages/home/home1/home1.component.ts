@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare function customInitFunctions():void;
+// declare function customInitFunctions():void;
 
 @Component({
   selector: 'app-home1',
@@ -13,7 +13,7 @@ export class Home1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    customInitFunctions();
+    // customInitFunctions();
 
   }
 
@@ -47,22 +47,22 @@ export class Home1Component implements OnInit {
   }
 
   whatwedo = {
-    title: "Nuestra Pasion",
+    title: "Galeria de Fotos",
     work: [
       {
         image: "assets/images/what-we-do/whatwedo1.png",
         // title: "Interior Design",
-        serial: "01"
+        // serial: "01"
       },
       {
         image: "assets/images/what-we-do/whatwedo3.png",
         // title: "Architectur",
-        serial: "02"
+        // serial: "02"
       },
       {
         image: "assets/images/what-we-do/whatwedo5.png",
         // title: "Floor Plan",
-        serial: "03"
+        // serial: "03"
       }
     ],
     // subtitle: "We present the idea with impressive details.",
@@ -229,16 +229,16 @@ export class Home1Component implements OnInit {
         url:"https://www.digev.mil.do/"
 
       },
-      {
-        image:"assets/images/client-logo/disponible.png",
-        url:"https://www.digev.mil.do/"
+      // {
+      //   image:"assets/images/client-logo/disponible.png",
+      //   url:"https://www.digev.mil.do/"
 
-      },
-      {
-        image:"assets/images/client-logo/disponible.png",
-        url:"https://www.digev.mil.do/"
+      // },
+      // {
+      //   image:"assets/images/client-logo/disponible.png",
+      //   url:"https://www.digev.mil.do/"
 
-      }
+      // }
     ]
   }
 

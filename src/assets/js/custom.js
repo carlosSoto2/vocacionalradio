@@ -857,6 +857,7 @@ function home_projects_filter(){
 		bg_image_stellar(),
 		//________page loader function by = custom.js________//
 		page_loader(),
+   
 		//________project carousel  function by = owl.carousel.js________//
 		project_carousel4()
 		//________project carousel  function by = owl.carousel.js________//

@@ -5,10 +5,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Home1Component } from './pages/home/home1/home1.component';
-import { Home2Component } from './pages/home/home2/home2.component';
-import { Home3Component } from './pages/home/home3/home3.component';
-import { Home4Component } from './pages/home/home4/home4.component';
-import { Home5Component } from './pages/home/home5/home5.component';
+
 import { LoaderDirective } from './directives/loader.directive';
 import { LoaderComponent } from './elements/loader/loader.component';
 import { Footer1Component } from './sections/footer/footer1/footer1.component';
@@ -75,7 +72,7 @@ import { SectionBlogs1Component } from './sections/home/home2/section-blogs1/sec
 import { SectionCounter1Component } from './sections/home/home2/section-counter1/section-counter1.component';
 import { SectionTestimonials2Component } from './sections/home/home1/section-testimonials2/section-testimonials2.component';
 import { SectionSlider3Component } from './sections/home/home3/section-slider3/section-slider3.component';
-import { SectionSlider4Component } from './sections/home/home4/section-slider4/section-slider4.component';
+
 import { SectionSlider6Component } from './sections/home/home6/section-slider6/section-slider6.component';
 import { SectionAbout3Component } from './sections/home/home3/section-about3/section-about3.component';
 import { SectionAwards1Component } from './sections/home/home3/section-awards1/section-awards1.component';
@@ -120,10 +117,6 @@ import { SectionShopHeaderComponent } from './sections/shop/section-shop-header/
   declarations: [
     AppComponent,
     Home1Component,
-    Home2Component,
-    Home3Component,
-    Home4Component,
-    Home5Component,
     LoaderDirective,
     LoaderComponent,
     Footer1Component,
@@ -190,7 +183,6 @@ import { SectionShopHeaderComponent } from './sections/shop/section-shop-header/
     SectionCounter1Component,
     SectionTestimonials2Component,
     SectionSlider3Component,
-    SectionSlider4Component,
     SectionSlider6Component,
     SectionAbout3Component,
     SectionAwards1Component,

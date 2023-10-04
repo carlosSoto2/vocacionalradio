@@ -8,7 +8,7 @@ declare var initializeOnLoad: any;
 
 
 
-declare function customInitFunctions():void;
+// declare function customInitFunctions():void;
 
 @Component({
   selector: 'app-root',
@@ -29,7 +29,7 @@ export class AppComponent implements AfterViewInit {
       this.reinitializeThings();
     });
 
-    customInitFunctions()
+    // customInitFunctions()
   }
 
   reinitializeThings() {
