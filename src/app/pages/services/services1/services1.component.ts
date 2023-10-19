@@ -20,9 +20,9 @@ export class Services1Component implements OnInit {
 
   banner = {
     image: "assets/images/banner/pagebanner.png",
-    title: "Programacion",
+    title: "Programación",
     description: "Disfrute de nuestra progrmacion variada",
-    page: "Programacion"
+    page: "Programación"
   }
 
   footerData = {
@@ -54,15 +54,14 @@ export class Services1Component implements OnInit {
   }
 
   services = {
-    title: "Nuestra Programacion",
+    title: "Nuestra Programación",
     services: [
 
-      
       {
-        title: "Martes, Miercoles, Jueves  ",
-        hour:"(9:00am a 2:00pm)",
-        description: "Noticias, efemérides, estado Del tiempo, música.",
-        locutor:"Bolivar Miranda",
+        title: "Lunes",
+        hour:"2:00pm A 5:00pm",
+        description: "Segmentos de motivación, música. ",
+        locutor:"Norberto Soriano ",
         serial: "01"
       },
       {
@@ -72,42 +71,46 @@ export class Services1Component implements OnInit {
         locutor:"Raymond Méndez",
         serial: "02"
       },
+
+      {
+        title: "Martes, Miercoles, Jueves  ",
+        hour:"(9:00am a 2:00pm)",
+        description: "Noticias, efemérides, estado Del tiempo, música.",
+        locutor:"Bolivar Miranda",
+        serial: "03"
+      },
+      {
+        title: "Miercoles y Jueves",
+        hour:"9:00am A 11:00am",
+        description: "Entrevista Especial",
+        locutor:"Katerinne Lorenzo",
+        serial: "04"
+      },
+
       {
         title: "Jueves",
         hour:"9:00am A 5:00pm",
         description: "Contenido cristiano, noticias, reflexiones, Efemérides, música, entrevistas.",
         locutor:"Franklin Ramírez",
-        serial: "03"
+        serial: "05"
       },
-      {
-        title: "Lunes",
-        hour:"2:00pm A 5:00pm",
-        description: "Segmentos de motivación, música. ",
-        locutor:"Norberto Soriano ",
-        serial: "04"
-      },
+
       {
         title: "Viernes",
         hour: "2:00pm A 5:00pm",
         description: "Deportes, mezcla de baladas nuevas con baladas del ayer. ",
-        locutor:"Saulo Cuevas ",
-        serial: "05"
+        locutor:"Isauro Cuevas ",
+        serial: "06"
       },
       {
         title: "Sabado",
         hour:"9:00am A 5:00pm",
         description: "Notas informativas, entrevista, historia cultural, curiosidades. ",
         locutor:"Guillermo Diaz",
-        serial: "06"
+        serial: "07"
       }
-      ,
-      {
-        title: "Miercoles y Jueves",
-        hour:"9:00am A 11:00am",
-        description: "Entrevista Especial",
-        locutor:"Katerinne Lorenzo",
-        serial: "06"
-      }
+
+
     ]
   }
 

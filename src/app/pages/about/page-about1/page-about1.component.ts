@@ -65,9 +65,10 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
   about = {
     image: "assets/images/background/radio-image445.webp",
     title: "Vocacional Radio",
-    description: "Somos la emisora oficial de La Dirección General de las Escuelas Vocacionales de las Fuerzas Armadas y la Policía Nacional (DIGEV), VOCACIONALRADIO.COM, nuestra programación está enfocada a programas educativos culturales, musicales y de orientación, con la participación de profesionales de diferentes áreas del mundo académico del país. La idea fundamental de la instalación de esta emisora es que sirva de plataforma a los estudiantes, profesores y colaboradores de la institución a nivel nacional y nuestros oyentes, para que puedan difundir sus ideas, proyectos y acciones operativas e innovadoras realizadas en cada una de sus demarcaciones.",
-    description2: "En 2022, se tuvo la iniciativa de incursionar con un medio propio pero diferente con ideas y filosofías bien definidas que refresque el espectro radial online como un aporte a la sociedad tanto educativamente como en motivación para que realicen sus labores de una forma animada y positiva. Bajo ésta responsabilidad y premisa se forma lo que es hoy VOCACIONALRADIO.COM, la cual se caracteriza por transmitir una programación  fundamentada en información, orientación, educación y entretenimiento, dirigida a la comunidad educativa técnico-profesional del país y el mundo. ",
-    description3:"La Dirección General de las Escuelas Vocacionales de las Fuerzas Armadas y la Policía Nacional (DIGEV) es un organismo para dotar a los miembros de las Fuerzas Armadas, la Policía Nacional y personas de la clase civil de conocimientos necesarios permitiéndoles ejercer un oficio productivo. La DIGEV fue creada el día 10 de Mayo del año 1966 mediante la Ley No.205 emitida por el Presidente Provisional de la República, Lic. Héctor  García Godoy. Es una institución dependiente del Ministerio de Defensa (MIDE) de la Republica Dominicana, investida de personalidad jurídica, de carácter no lucrativo y patrimonio propio y dirigida por un Director General.",
+    description: "Somos la emisora oficial de La Dirección General de las Escuelas Vocacionales de las Fuerzas Armadas y la Policía Nacional (DIGEV), Vocacionalradio.com, nuestra programación está enfocada a programas educativos, culturales, musicales y de orientación, con la participación de profesionales de diferentes áreas del mundo académico del país. La idea fundamental de la instalación de esta emisora es que sirva de plataforma a los estudiantes, profesores, colaboradores de nuestra institución y demás participantes para que puedan difundir sus ideas, proyectos y acciones operativas e innovadoras realizadas en cada una de sus demarcaciones.",
+    description2: " En 2022, se tuvo la iniciativa de incursionar con un medio competitivo propio pero diferente con ideas bien definidas que refresque el espectro radial online como un aporte a la sociedad tanto educativa como de motivación para que realicen sus labores de una forma animada y positiva. Y así poner en alto las letras de nuestro lema, <strong>“Aquí se enseña haciendo y se aprende trabajando”</strong>.",
+    description3:"Bajo ésta responsabilidad y premisa se forma lo que es hoy Vocacionalradio.com la cual se caracteriza por transmitir una programación  fundamentada en información actualizada, orientación, cultura, educación y entretenimiento, dirigida a la comunidad educativa técnico-profesional y a todos nuestros radioescuchas a nivel nacional e internacional. ",
+    description4:" La Dirección General de las Escuelas Vocacionales de las Fuerzas Armadas y la Policía Nacional es un organismo para dotar a los miembros de las Fuerzas Armadas, la Policía Nacional y personas de la clase civil de conocimientos necesarios permitiéndoles capacitarse en acciones formativas técnico-profesional de calidad y así tener la oportunidad de insertarse con más facilidad al mercado laboral productivo. fue creada el día 10 de Mayo del año 1966 mediante la Ley No.205 emitida por el Presidente Provisional de la República, Lic. Héctor  García Godoy. Es una institución dependiente del Ministerio de Defensa (MIDE) de la Republica Dominicana, investida de personalidad jurídica, de carácter no lucrativo y patrimonio propio y dirigida por un Director General."
 
   }
 
@@ -98,18 +99,19 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
     title: "What We Do",
     work: [
       {
-        title: "Mision",
+        title: "Misión",
         description: "Hacernos parte de nuestra audiencia, de su alegría diaria, de su convivir y que nuestra programación sirva además de entretener, también para culturizar, informar, orientar, motivar y guiar de una forma sana, basados en nuestra filosofía de transmitir buenas noticias con una actitud positiva y motivadora en el día a día de nuestros estudiantes, profesores y colaboradores de la institución a nivel nacional y nuestros oyentes, y que estos les permitan incorporarse al mercado laboral productivo, inculcando en ellos una cultura de emprendedurismo para fortalecer de este modo el desarrollo nacional.",
         serial: "01"
       },
       {
-        title: "Vision",
+        title: "Visión",
         description: "Llegar a los más altos estándares de calidad en servicio a nuestra audiencia, con excelente sonido, fidelidad y ofreciendo información fresca, real, interesante, entregada con respeto y objetividad, de forma que la audiencia sea parte de la programación con su participación, ideas e inclusión en temas, propuestas y mejoras, y que esto conlleve al éxito de la radio y por ende de la sociedad.",
         serial: "02"
       },
       {
         title: "Valores",
         description1: "Lealtad",
+        title1:"Sentimiento de respeto y fidelidad a los propios principios morales, a los compromisos establecidos o hacia alguien",
         description2: "Disciplina",
         description3: "Credibilidad",
         description4: "Transparencia",
@@ -142,7 +144,7 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
       {
 
         years: "2022",
-        title: "3,293"
+        title: "5,713"
       },
       {
         years: "2019",
@@ -178,21 +180,14 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
         instagram:""
       },
       {
-        image: "assets/images/our-team5/1.jpg",
+        image: "assets/images/our-team5/ross-pena.png",
         name: "Ross Peña ",
         role: "Asesor",
         facebook:"https://www.facebook.com/ross.pena.3",
         twitter:"https://twitter.com/i/flow/login?redirect_after_login=%2Frosspea",
         instagram:"https://www.instagram.com/rosanopena/?hl=en"
       },
-      {
-        image: "assets/images/our-team5/1.jpg",
-        name: "Leidy Minaya",
-        role: "Coord. Administrativa",
-        facebook:"",
-        twitter:"",
-        instagram:""
-      },
+
       {
         image: "assets/images/our-team5/bolivar-miranda.png",
         name: "Bolívar Miranda",
@@ -202,7 +197,7 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
         instagram:""
       },
       {
-        image: "assets/images/our-team5/raymond-mendez.png",
+        image: "assets/images/our-team5/raymond-mendez2.png",
         name: "Raymond Méndez",
         role: "Locutor",
         facebook:"",
@@ -218,7 +213,7 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
         instagram:""
       },
       {
-        image: "assets/images/our-team5/norberto-soriano.png",
+        image: "assets/images/our-team5/norberto-soriano2.png",
         name: "Norberto Soriano",
         role: "Locutor",
         facebook:"",
@@ -226,8 +221,8 @@ export class PageAbout1Component implements OnInit, AfterViewInit {
         instagram:""
       },
       {
-        image: "assets/images/our-team5/1.jpg",
-        name: "Saulo Cuevas",
+        image: "assets/images/our-team5/isauro-cuevas.png",
+        name: "Isauro Cuevas",
         role: "Locutor",
         facebook:"",
         twitter:"",

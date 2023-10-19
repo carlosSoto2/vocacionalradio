@@ -25,7 +25,7 @@ export class Home1Component implements OnInit {
   about = {
     title: "Nosotros",
     subtitle: "Vocacional Radio",
-    description: "Somos la emisora oficial de La Dirección General de las Escuelas Vocacionales de las Fuerzas Armadas y la Policía Nacional (DIGEV), nuestra programación está enfocada a programas educativos culturales, musicales y de orientación, con la participación de profesionales de diferentes áreas del mundo académico del país.",
+    description: "Somos la emisora oficial de La Dirección General de las Escuelas Vocacionales de las Fuerzas Armadas y de la Policía Nacional (DIGEV), nuestra programación está enfocada a programas educativos culturales, musicales y de orientación, con la participación de profesionales de diferentes áreas del mundo académico del país.",
     images: [
       {
         image: "assets/images/about-slider/1.png"
@@ -78,8 +78,8 @@ export class Home1Component implements OnInit {
           title: "Egresados desde 1966 a 2023"
         },
         {
-          count: "3,279",
-          title: "Cursos Talleres de Capacitaciones"
+          count: "105",
+          title: "Acciones Formativas"
         },
         // {
         //   count: "36",
@@ -94,7 +94,7 @@ export class Home1Component implements OnInit {
           image: "assets/images/testimonials/fran-tapia.png",
           name: "Fran Tapia",
           role: "Refrigeracion",
-          quote: "“Me motivo a estudiar refrigeración la falta de empleo que hay en la sociedad, ya que aquí puedo agotar el tiempo, porque no tengo trabajo, y también  obtengo nuevos conocimientos y le puedo sacar provecho. Gracias a las Escuelas Vocacionales de las Fuerzas Armadas y Policía Nacional luego de capacitarme puede emprender en mi propio negocio. ”"
+          quote: "“Me motivo a estudiar refrigeración la falta de empleo que hay en la sociedad, ya que aquí puedo agotar el tiempo, porque no tengo trabajo, y también  obtengo nuevos conocimientos y le puedo sacar provecho. Gracias a las Escuelas Vocacionales de las Fuerzas Armadas y de la Policía Nacional luego de capacitarme puede emprender en mi propio negocio. ”"
         },
         {
           image: "assets/images/testimonials/eulalia-pimentel.png",
